@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run:ci
-          name: "install npm"
+          name: Install NPM
           command: "npm install"
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
